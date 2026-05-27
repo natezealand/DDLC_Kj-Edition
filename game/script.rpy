@@ -22,10 +22,12 @@ label start:
     # To add a character, use the following example below: 
     #   $ mi_name = "Mike". 
     # Don't forget to add the character to 'definitions.rpy'!
+    # do '$ s_name = "Sayori"' to change sayoris name back during the script
     $ s_name = "???"
-    $ m_name = "Girl 3"
-    $ n_name = "Girl 2"
-    $ y_name = "Girl 1"
+
+    $ m_name = "Goatika"
+    $ n_name = "Natsuki"
+    $ y_name = "Yuri"
 
     # This variable controls whether the quick menu in the textbox is enabled.
     $ quick_menu = True
@@ -46,8 +48,10 @@ label start:
     # This is where your script code is called!
     # 'persistent.playthrough' controls the playthrough number the player is on i.e (Act 1, 2, 3, 4)
 
-    # REMOVE THIS LINE WHEN YOU HAVE MADE A STORY SCRIPT FILE AND CALLED IT HERE
-    call screen dialog(message="It seems that you are trying to run the mod template as a new game with no story.\nThis is a template, not an actual mod. Please code a story for your mod, call it in \'script.rpy\', and try again.", ok_action=MainMenu(confirm=False))
+
+    # pretty sure im only gonna have 1 day/script
+    call story01_main
+
 
     ## Example on calling scripts from DDLC.
     # if persistent.playthrough == 0:

@@ -7,14 +7,14 @@
 # This file customizes what your mod is and and how it starts and builds!
 
 # This controls what your mod is called.
-define config.name = "DDLC Mod Template – Python 2 Edition"
+define config.name = "DDLC Kj Edition"
 
 # This controls whether you want your mod name to show in the main menu.
 # If your mod name is big, it is suggested to turn this off.
-define gui.show_name = True
+define gui.show_name = False
 
 # This controls the version number of your mod.
-define config.version = "4.2.0-Py2"
+define config.version = "1.0"
 
 # This adds information about your mod in the About screen.
 # DDLC does not have a 'About' screen so you can leave this blank.
@@ -25,7 +25,7 @@ define gui.about = _("")
 # Note:
 #   The build name is ASCII only so no numbers, spaces, or semicolons.
 #   Example: Doki Doki Yuri Time to DokiDokiYuriTime
-define build.name = "DDLCModTemplateTwo-Py2"
+define build.name = "DDLC_Kj_Edition"
 
 # This configures whether your mod has sound effects.
 define config.has_sound = True
