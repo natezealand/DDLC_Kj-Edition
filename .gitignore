@@ -1,0 +1,9 @@
+#saves/cache (please work)
+game/saves/
+game/cache/
+
+#logs
+log.txt
+
+#ddlc game archive files
+*.rpa
