@@ -10,7 +10,7 @@ label story01_main:
     play music t2
     "My name is [player], and today is my 18th birthday!"
     "It's a school day today, but lets be honest... who wants to go to school on their birthday?"
-    "Standing outside my house I ponder, today should i go buy more anime figures-"
+    "Standing outside my house I ponder, today should I go buy more anime figures-"
     "-or play yu-gi-oh with middle aged men at a game shop?"
     "hmmmmmm..........."
     s "Heeeeeeeyyy!!"
