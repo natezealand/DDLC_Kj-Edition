@@ -25,9 +25,9 @@ label start:
     # do '$ s_name = "Sayori"' to change sayoris name back during the script
     $ s_name = "???"
 
-    $ m_name = "Goatika"
-    $ n_name = "Natsuki"
-    $ y_name = "Yuri"
+    $ m_name = "Unknown Baddie"
+    $ n_name = "Girl 2"
+    $ y_name = "Girl 1"
 
     # This variable controls whether the quick menu in the textbox is enabled.
     $ quick_menu = True
@@ -50,7 +50,11 @@ label start:
 
 
     # pretty sure im only gonna have 1 day/script
-    call story01_main
+
+    # meeting sayori in the street: v
+    call story01_pt1
+    # entering the club: v
+    call story01_pt2
 
 
     ## Example on calling scripts from DDLC.

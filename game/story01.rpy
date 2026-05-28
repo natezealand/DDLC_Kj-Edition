@@ -1,17 +1,16 @@
-label story01_main:
+label story01_pt1:
     # starting scene / music copied from the original game script
     stop music fadeout 2.0
     with dissolve_scene_full
 
     $ restore_all_characters()
-    "Ah. Another day in the paradise called Bankstown, Japan."
+    "Ah. Another day in the paradise of 'Bankstown, Japan.'"
     scene bg residential_day
     with dissolve_scene_full
     play music t2
     "My name is [player], and today is my 18th birthday!"
     "It's a school day today, but lets be honest... who wants to go to school on their birthday?"
-    "Standing outside my house I ponder, today should I go buy more anime figures-"
-    "-or play yu-gi-oh with middle aged men at a game shop?"
+    "Standing outside my house I ponder, today should I go buy more anime figures - or go to Yu-Gi-Oh locals?"
     "hmmmmmm..........."
     s "Heeeeeeeyyy!!"
     "Before I can decide, I see an annoying girl running towards me from the distance, waving her arms in the air like she knows me."
@@ -30,13 +29,128 @@ label story01_main:
     "In actuality she's pretty shit - so I mostly stay on offline mode so that I can queue without her."
     show sayori om ce
     s "Oh my gosh!!! [player] it's your birthday!"
-    s "We have to spend the day together! I've got the most perfect place we can go!!!"
+    s "We have to spend the day together! I've got the most perfect place we can go to!!!"
     mc "It's not that book club thing is it?"
     show sayori tap cm neut oe
     s "It's not a 'book club', it's a literature club..."
     mc "Sayori...."
-    mc "that really sounds like the same thing."
+    mc "That really sounds like the same thing."
     mc "And besides I get all the reading I need from visual novels, why would I wanna read books?"
-    
+    show sayori turned ldown rdown angr cm oe
+    s "Oh cmon [player] do you really wanna be a freaking weeb NEET loser forever?? Meet some people."
+    show sayori at f11
+    s "And the middle aged chuds at Yu-Gi-Oh locals dont count!"
+    mc "..."
+    "{i}god I hate this bitch{/i}"
+
+    stop music fadeout 2.0
+    scene bg corridor
+    with wipeleft_scene
+
+    "And thus, today marks the day I was annoyed into joining my neighbours stupid club."
+    "I dejectedly follow Sayori across the school and upstairs - a section of the school I rarely visit, being generally used for third-year classes, activities, and probably selling drugs."
+    "Sayori, tired from the menial stair climbing, swings open the classroom door."
+
+label story01_pt2:
+
+    scene bg club_day
+    with wipeleft
+    play music t3
+
+    "I wish I just went to Yu-Gi-Oh instead."
+    show sayori turned happ oe cm lup rup at t31
+    s "Everyone! The new member is here~!"
+    mc "Hey, I never agreed to join--"
+    show sayori at thide
+    hide sayori
+    "I glance around the room."
+    show yuri turned happ at f21
+    show natsuki cross vsur oe cm at t22
+    y "Welcome to the Literature Club. It's a pleasure meeting you."
+    y "My name is Yuri, and this is Natsuki."
+    $ y_name = "Yuri"
+    $ n_name = "Natsuki"
+    show yuri at t21
+    show natsuki nerv om oe at f22
+    n "Umm..."
+    n "..............."
+    show natsuki at t22
+    n "{i}umm yuri can i come speak to you for a moment..{/i}"
+    show natsuki at thide
+    show yuri at thide
+    hide natsuki
+    hide yuri 
+    "Uhh......"
+    "What's her problem?"
+    show monika lean at t11
+    m "Ah, and you must be [player]! What a nice surprise!"
+    "Is that-- My heart flutters, as I recognise the one and only Goatika!!"
+    $ m_name = "Goatika"
+    m "Welcome to the club!"
+    show monika at thide
+    hide monika
+    mc "..."
+    "All words escape me in this situation."
+    show sayori turned happ oe cm at t41 
+    show monika forward happ oe cm at t42
+    show yuri turned neut e1d at t43
+    show natsuki cross neut e2c at t44
+    stop music fadeout 2.0
+    "This club..."
+    "{i}...is full of baddies!!{/i}"
+
+    scene bg club_day
+    with dissolve_scene_full
+    play music t3
+
+    "The girls have all gone off in seperate areas of the clubroom to do their own activities."
+    "I guess it's time to s*cialise. I'll start with Yuri, I'm pretty curious about what the heck was going on with Natsuki earlier."
+    "I walk over to Yuri, who is sitting alone at a desk by the windows - focused in on a book."
+    show yuri turned neut e1a at t33
+    mc "Hey, Yuri right? Mind if I sit next to --"
+    # if youre reading this, and think this is weird, just know this is a reference to an inside joke
+    "Standing next to her, I notice that in the middle of her book she's concealing a phone - on which is the steam page for a game called 'Beat Banger'."
+    show yuri turned pani om oe
+    mc "WHAT THE FUCK???? IS THAT PORN??"
+    show yuri at f33
+    y "N-no no no th-this isn't what it looks like!"
+    mc "Yuri why the fuck are you looking at this shit in the literature club?!"
+    show yuri shy at t33
+    y "No-no I-I was {b}just looking{/b}!"     
+    "I wonder if this will be something I'll constantly reference later..."
+    show yuri neut e1
+    y "Um. What was it you wanted... [player]."
+    mc "..."
+    mc "Well - I guess I was wanting to ask about what's up with Natsuki? She was acting weird when I met her."
+    mc "I get the feeling it was about me, so I hope you don't mind me asking, what was it she needed to say to you?"
+    show yuri turned sad om ce
+    y "Oh... You know it was really nothing."
+    show yuri at thide
+    hide yuri
+
+    "FLASHBACK TIME"
+
+    # very important note: my friend (kj) is black, so this is very funny i swear
+    stop music fadeout 0.5
+    show natsuki cross angr om oe at f22
+    show yuri turned rup lup cm oe at t21
+    play sound page_turn
+    with pixellate
+    n "Seriously? She brought one of {i}those{/i} poeple?"
+    n "Way to kill the atmosphere."
+    show natsuki at t22
+    show yuri turned neut b2c om
+    y "Oh cmon Natsuki you can't be saying that stuff... Sayori knows this guy, he'll be fine."
+    show natsuki at f22
+    n "His people are dangerous! Have you even heard about the Chicago crime statistics?"
+
+    show natsuki thide
+    hide natsuki
+    show yuri turned sad om ce at t33
+    play sound page_turn
+    with pixellate
+
+    mc "Well. I guess I just have to go talk to her myself."
+
 
     return
