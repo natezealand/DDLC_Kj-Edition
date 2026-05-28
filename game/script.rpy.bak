@@ -52,11 +52,11 @@ label start:
     # pretty sure im only gonna have 1 day/script
 
     # meeting sayori in the street: v
-    call story01_pt1 from _call_story01_pt1
+    call story01_pt1
     # entering the club: v
-    call story01_pt2 from _call_story01_pt2
+    call story01_pt2
     # final bit: v
-    call story01_end from _call_story01_end
+    call story01_end
     
 
     ## Example on calling scripts from DDLC.

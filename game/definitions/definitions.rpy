@@ -10,7 +10,7 @@ define persistent.demo = False
 define persistent.steam = ("steamapps" in config.basedir.lower())
 
 # This variable declares whether Developer Mode is on or off in the mod. - DONT FORGET TO CHANGE THIS BEFORE YOU COMPILE THE GAME NATE!
-define config.developer = True
+define config.developer = False
 
 # This python statement starts singleton to make sure only one copy of the mod
 # is running.
