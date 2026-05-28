@@ -55,7 +55,8 @@ label start:
     call story01_pt1
     # entering the club: v
     call story01_pt2
-
+    # final bit: v
+    call story01_end
 
     ## Example on calling scripts from DDLC.
     # if persistent.playthrough == 0:

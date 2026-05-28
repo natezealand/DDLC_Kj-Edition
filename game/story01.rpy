@@ -20,16 +20,18 @@ label story01_pt1:
     $ s_name = "Sayori"
     "Sayori is my neighbour, so I really don't know why she's panting, we literally live right next door to eachother?"
     "{i}what a fatty{/i}"
-    show sayori turned lsur cm ce
+    show sayori turned lsur cm ce at f11
     s "I almost lost track of time while eating my breakfast!"
     show sayori turned lup rup oe cm happ
     s "But I caught you [player]!"
+    show sayori at t11
     "Sayori has been a friendly face since I moved here a couple years ago."
     "I say that, though when I first met her, I mostly just got her to pocket heal me on Marvel Rivals."
     "In actuality she's pretty shit - so I mostly stay on offline mode so that I can queue without her."
-    show sayori om ce
+    show sayori om ce at f11
     s "Oh my gosh!!! [player] it's your birthday!"
     s "We have to spend the day together! I've got the most perfect place we can go to!!!"
+    show sayori at t11
     mc "It's not that book club thing is it?"
     show sayori tap cm neut oe
     s "It's not a 'book club', it's a literature club..."
@@ -151,6 +153,66 @@ label story01_pt2:
     with pixellate
 
     mc "Well. I guess I just have to go talk to her myself."
+    
+    show yuri thide
+    hide yuri
+    scene bg club_day
+    with dissolve_scene_full
+    play music t8
+    
+    "Natsuki is in the corner of the classroom, rummaging through the closet"
+    "Yuri watches as I walk past her, and toward Natsuki. Totally Ego'ing her as she tries to warn me to stay away from Natsuki."
+    "I never let foids tell me what to do."
+
+    # VERY IMPORTANT: MY FREIND (KJ) IS BLACK, SO THIS IS VERY FUNNY, I SWEAR IM NOT RACIST, NATSUKI IS RACIST
+    scene bg closet
+    with wipeleft
+    mc "Uhh Hi Natsuki - It's me, Sayori's friend, [player]."
+    show natsuki cross doub cm oe at t11
+    n "Umm.... Hi?"
+    show natsuki ce
+    n "..."
+    n "Um.... This is the closet we're able to keep our club supplies in."
+    show natsuki oe om
+    n "There's books and stuff in here that you can read but just don't steal them okay?"
+    show natsuki cm
+    mc "Why would you assume I'd steal a book from the club's closet?"
+    show natsuki om at f11
+    n "Um yeah sorry for assumming they taught you to read in wakanda or wherever you're from"
+    show natsuki
+    stop music
+    n "You can't steal ANYTHING okay? capiche ******?"
+    show natsuki at t11
+    "..."
+    "..."
+    play sound "sfx/monikapound.ogg"
+    "WHAT THE FUCK IS WRONG WITH THIS BITCH???"
+
+    menu:
+        "Slime out Natsuki":
+            show natsuki cross mc b3b at f11
+            n "Woah you look angry, don't pull the 'nine on me jamal."
+            "*pulls out glock*"
+            show natsuki turned pani cm oe at t11
+            "*cocks gun*"
+            $ m_name = "???"
+            play music t9
+            m "GUYS STOP!"
+            $ m_name = "Monika"
+            show natsuki at t22
+            show monika forward cry cm oe at f21
+            m "Guys! This isn't You!!!"
+            m "Please stop fighting!!!"
+            show monika ce
+            m "..."
+            m "[player], to the hallway with me, Natsuki - go talk to yuri!"
+            jump story01_end
+
+    label story01_end:
+        
+
+
+
 
 
     return
