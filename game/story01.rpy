@@ -173,7 +173,7 @@ label story01_pt2:
     n "Umm.... Hi?"
     show natsuki ce
     n "..."
-    n "Um.... This is the closet we're able to keep our club supplies in."
+    n "Um.... This is the closet where we're able to keep our club supplies in."
     show natsuki oe om
     n "There's books and stuff in here that you can read but just don't steal them okay?"
     show natsuki cm
