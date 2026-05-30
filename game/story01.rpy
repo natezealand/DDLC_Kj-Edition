@@ -139,7 +139,7 @@ label story01_pt2:
     show yuri turned rup lup cm oe at t21
     play sound page_turn
     with pixellate
-    n "Seriously? She brought one of {i}those{/i} poeple?"
+    n "Seriously? She brought one of {i}those{/i} people?"
     n "Way to kill the atmosphere."
     show natsuki at t22
     show yuri turned neut b2c om
