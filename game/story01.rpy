@@ -51,7 +51,7 @@ label story01_pt1:
     with wipeleft_scene
 
     "And thus, today marks the day I was annoyed into joining my neighbours stupid club."
-    "I dejectedly follow Sayori across the school and upstairs - a section of the school I rarely visit, being generally used for third-year classes, activities, and probably selling drugs."
+    "I dejectedly follow Sayori across the school and upstairs - a section of the school I rarely visit."
     "Sayori, tired from the menial stair climbing, swings open the classroom door."
 
 label story01_pt2:
