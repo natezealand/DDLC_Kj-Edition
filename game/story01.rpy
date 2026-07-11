@@ -273,3 +273,5 @@ label story01_end:
 
     $ MainMenu(confirm=False)() 
 #COMPLETED!!!!! :D
+
+# this mod was made with the help of EqualsM3rc's tutorials on youtube! (https://www.youtube.com/playlist?list=PLuJRtPOXdiBLb2Qvux4TWfWUae4lXxXMT)
